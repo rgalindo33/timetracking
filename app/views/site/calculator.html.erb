@@ -1,0 +1,6 @@
+<form action="/calculate" method="POST">
+  <input type="text" name="first_num">
+  <input type="text" name="second_num">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <button type="submit">add</button>
+</form>
