@@ -7,5 +7,9 @@ Rails.application.routes.draw do
   post '/calculate', to: 'site#calculate'
 
   get '/projects', to: 'projects#index'
-  get '/projects/:id', to: 'projects#show'
+
+  get '/projects/new', to: 'projects#new'
+  get '/projects/:id', to: 'projects#show', as: 'project_path'
+
+  post '/projects', to: 'projects#create'
 end
