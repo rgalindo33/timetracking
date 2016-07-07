@@ -6,10 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Project.create(name:"Crazy project", description:"you wont believe it").time_entries.create()
+Project.create(name:"Crazy project", description:"you wont believe it").time_entries.create(hours:5, minutes:20, date: 3.days.ago)
 
 project = Project.create(name:"Time tracking app")
-project.time_entries.create(hours:6)
+project.time_entries.create(hours:6, minutes:40, date: 2.weeks.ago)
 
 Project.create(name:"Recipees", description:"for all the foodies")
 Project.create(name:"Crazy project2", description:"2you wont believe it")

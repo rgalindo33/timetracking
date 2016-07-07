@@ -5,6 +5,8 @@
       <p> total time: <%= time_entry.hours %>:<%= time_entry.minutes %></p>
       <p> date:<%= time_entry.date %> </p>
       <p> comments:<%= time_entry.comments %> </p>
+
+      <%= link_to "edit", project_time_entry_edit_path(@project, time_entry) %>
     </li>
   <% end %>
 </ul>
