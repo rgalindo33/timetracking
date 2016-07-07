@@ -14,6 +14,7 @@ class TimeEntriesController < ApplicationController
     @my_entry = @my_project.time_entries.create(entry_params)
 
     if @my_entry
+      flash[:notice] = "you have successfully created a time entry"
       redirect_to action: "index",
                   controller: "time_entries",
                   project_id: @my_project.id

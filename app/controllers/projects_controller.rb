@@ -18,9 +18,8 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    # @my_project = Project.new(name: params[:project][:name],
-    #                           description: params[:project][:description])
-    @my_project = Project.new(params[:project])
+    @my_project = Project.new(name: params[:project][:name],
+                              description: params[:project][:description])
 
     @my_project.save
 
